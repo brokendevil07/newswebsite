@@ -1,0 +1,119 @@
+     body {
+         padding: 0;
+         margin: 0;
+         background-color: #add8e6;
+     }
+     
+     h1 {
+         text-align: center;
+         font-size: 1.9cm;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         background-color: tomato;
+         padding: 10px;
+         color: white;
+     }
+     
+     h2 {
+         text-align: end;
+     }
+     
+     h2 {}
+     
+     .menu-bar {
+         text-align: center;
+     }
+     
+     .menu-bar ul {
+         background-color: #add8e6;
+         display: inline-flex;
+         list-style: none;
+         color: black;
+     }
+     
+     .menu-bar ul li {
+         width: 120px;
+         padding: 15px;
+         margin: 15px;
+         border-color: whit5esmoke;
+         align-content: center;
+         font-size: 15px;
+         font-weight: bold;
+         text-align: center;
+     }
+     
+     .menu-bar ul li a {
+         text-decoration: none;
+         color: black;
+     }
+     
+     .menu-bar ul li {
+         background: white;
+         border-radius: 3px;
+     }
+     
+     .menu-bar ul li:hover {
+         background-color: yellow;
+     }
+     
+     .social-menu ul {
+         position: absolute;
+         top: 50%;
+         left: 35%;
+         transform: translate(-50%, -50%);
+         padding: 10px;
+         margin: -265px;
+         display: flex;
+     }
+     
+     .social-menu ul li {
+         list-style: none;
+         margin: 0 10px;
+     }
+     
+     .social-menu ul li .fa {
+         color: #000000;
+         font-size: 25px;
+         line-height: 50px;
+         transition: .5s;
+     }
+     
+     .social-menu ul li .fa:hover {
+         color: #ffffff;
+     }
+     
+     .social-menu ul li a {
+         position: relative;
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         background-color: white;
+         text-align: center;
+         transition: 0.5s;
+         transform: translate(0, 0px);
+         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+     }
+     
+     .social-menu ul li a:hover {
+         transform: rotate(0deg) skew(0deg) translate(0, -10px);
+     }
+     
+     .social-menu ul li:nth-child(1) a:hover {
+         background-color: #3b5999;
+     }
+     
+     .social-menu ul li:nth-child(2) a:hover {
+         background-color: #55acee;
+     }
+     
+     .social-menu ul li:nth-child(3) a:hover {
+         background-color: #e4405f;
+     }
+     
+     .social-menu ul li:nth-child(4) a:hover {
+         background-color: #cd201f;
+     }
+     
+     .social-menu ul li:nth-child(5) a:hover {
+         background-color: #0077B5;
+     }
