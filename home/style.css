@@ -1,0 +1,150 @@
+     body {
+         padding: 0;
+         margin: 0;
+         background-color: #add8e6;
+     }
+     
+     h1 {
+         text-align: center;
+         font-size: 1.9cm;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         background-color: tomato;
+         padding: 10px;
+         color: white;
+     }
+     
+     img {
+         width: 99;
+     }
+     
+     .img1 {
+         position: absolute;
+         top: 51%;
+         left: 37%;
+         transform: translate(-50%, -50%);
+         padding: 10px;
+         margin: -265px;
+         display: flex;
+     }
+     
+     .social-menu ul {
+         position: absolute;
+         top: 53%;
+         left: 107%;
+         transform: translate(-50%, -50%);
+         padding: 10px;
+         margin: -265px;
+         display: flex;
+     }
+     
+     .social-menu ul li {
+         list-style: none;
+         margin: 0 10px;
+     }
+     
+     .social-menu ul li .fa {
+         color: #000000;
+         font-size: 25px;
+         line-height: 50px;
+         transition: .5s;
+     }
+     
+     .social-menu ul li .fa:hover {
+         color: #ffffff;
+     }
+     
+     .social-menu ul li a {
+         position: relative;
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         background-color: white;
+         text-align: center;
+         transition: 0.5s;
+         transform: translate(0, 0px);
+         box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+     }
+     
+     .social-menu ul li a:hover {
+         transform: rotate(0deg) skew(0deg) translate(0, -10px);
+     }
+     
+     .social-menu ul li:nth-child(1) a:hover {
+         background-color: #3b5999;
+     }
+     
+     .social-menu ul li:nth-child(2) a:hover {
+         background-color: #55acee;
+     }
+     
+     .social-menu ul li:nth-child(3) a:hover {
+         background-color: #e4405f;
+     }
+     
+     .social-menu ul li:nth-child(4) a:hover {
+         background-color: #cd201f;
+     }
+     
+     .social-menu ul li:nth-child(5) a:hover {
+         background-color: #0077B5;
+     }
+     
+     * {
+         margin: 0;
+         padding: 0;
+     }
+     
+     .menu-bar {
+         margin: auto;
+         padding: 0PX;
+     }
+     
+     .menu-bar ul {
+         list-style: none;
+         margin-top: 2%;
+     }
+     
+     .menu-bar ul li {
+         background: #ffffff;
+         width: 150;
+         border: 1px solid BLACK;
+         text-decoration: none;
+         height: 50px;
+         right: -5%;
+         color: black;
+         line-height: 50px;
+         text-align: center;
+         float: left;
+         font-size: 17px;
+         position: relative;
+         font-family: poppins;
+         font-weight: bold;
+     }
+     
+     .menu-bar ul li:hover {
+         background: yellow;
+     }
+     
+     .menu-bar ul ul {
+         display: none;
+     }
+     
+     .menu-bar ul li:hover>ul {
+         display: block;
+     }
+     
+     .menu-bar ul ul ul {
+         margin-left: 170px;
+         top: 0;
+         position: absolute;
+     }
+     
+     a {
+         text-decoration: none;
+         color: black;
+     }
+     
+     .menu-bar :hover {
+         color: blue;
+     }
