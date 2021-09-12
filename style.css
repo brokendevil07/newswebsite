@@ -1,0 +1,782 @@
+                                body {
+                                    padding: 0;
+                                    margin: 0;
+                                    background-color: #add8e6;
+                                }
+                                
+                                @font-face {
+                                    font-family: 'sergeant rock';
+                                    src: url(FONT/Sergeant\ Rock.ttf);
+                                    font-style: normal;
+                                    font-weight: 100%;
+                                }
+                                
+                                h1 {
+                                    text-align: center;
+                                    font-size: 1cm;
+                                    padding: 23PX;
+                                    background-image: linear-gradient(yellow, blue);
+                                    color: white;
+                                    font-family: sergeant rock;
+                                    font-weight: 60%;
+                                    text-shadow: 5px 5px black, 0 0 15px black;
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .img1 {
+                                    position: absolute;
+                                    top: 53%;
+                                    left: 37%;
+                                    width: 110px;
+                                    transform: translate(-50%, -50%);
+                                    padding: 10px;
+                                    margin: -265px;
+                                    display: flex;
+                                }
+                                
+                                .social-menu ul {
+                                    position: absolute;
+                                    top: 58%;
+                                    left: 109%;
+                                    transform: translate(-50%, -50%);
+                                    margin: -265px;
+                                    display: flex;
+                                }
+                                
+                                .social-menu ul li {
+                                    list-style: none;
+                                    margin: 0 10px;
+                                }
+                                
+                                .social-menu ul li .fa {
+                                    color: #000000;
+                                    font-size: 25px;
+                                    line-height: 40px;
+                                    transition: .5s;
+                                    text-align: center;
+                                }
+                                
+                                .social-menu ul li .fa:hover {
+                                    color: #ffffff;
+                                }
+                                
+                                .social-menu ul li a {
+                                    position: -webkit-sticky;
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    background-color: white;
+                                    text-align: center;
+                                    transition: 0.5s;
+                                    transform: translate(0, 0px);
+                                    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+                                }
+                                
+                                .social-menu ul li a:hover {
+                                    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+                                }
+                                
+                                .social-menu ul li:nth-child(1) a:hover {
+                                    background-color: #3b5999;
+                                }
+                                
+                                .social-menu ul li:nth-child(2) a:hover {
+                                    background-color: #55acee;
+                                }
+                                
+                                .social-menu ul li:nth-child(3) a:hover {
+                                    background-color: #e4405f;
+                                }
+                                
+                                .social-menu ul li:nth-child(4) a:hover {
+                                    background-color: #cd201f;
+                                }
+                                
+                                .social-menu ul li:nth-child(5) a:hover {
+                                    background-color: #0077B5;
+                                }
+                                
+                                * {
+                                    margin: 0;
+                                    padding: 0px;
+                                }
+                                
+                                .menu-bar {
+                                    margin: auto;
+                                    padding: 0PX;
+                                }
+                                
+                                .menu-bar ul {
+                                    list-style: none;
+                                    margin-top: 2%;
+                                    margin-bottom: 2%;
+                                }
+                                
+                                .menu-bar ul li {
+                                    background: #ffffff;
+                                    width: 143;
+                                    border: 1px solid BLACK;
+                                    height: 50px;
+                                    right: -3%;
+                                    color: black;
+                                    line-height: 50px;
+                                    text-align: center;
+                                    float: left;
+                                    font-size: 19px;
+                                    position: relative;
+                                    font-family: monospace;
+                                    font-weight: bolder;
+                                    z-index: 1;
+                                }
+                                
+                                .menu-bar ul li:hover {
+                                    background: yellow;
+                                }
+                                
+                                .menu-bar ul ul {
+                                    display: none;
+                                }
+                                
+                                .menu-bar ul li:hover>ul {
+                                    display: block;
+                                }
+                                
+                                .menu-bar ul ul ul {
+                                    margin-left: 170px;
+                                    top: 0;
+                                    position: absolute;
+                                }
+                                
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                }
+                                
+                                .menu-bar :hover {
+                                    color: red;
+                                }
+                                
+                                .breaking-news-s {
+                                    background: lightyellow;
+                                    height: 25px;
+                                    right: -4%;
+                                    padding: 0 30px 0 60px;
+                                    display: flex;
+                                    border: 1px solid BLACK;
+                                    color: red;
+                                }
+                                
+                                #btext {
+                                    width: 200px;
+                                    font-size: 20px;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    margin: auto 0;
+                                }
+                                
+                                .breaking-news {
+                                    padding: 30px;
+                                    color: black;
+                                    font-weight: 600;
+                                    display: inline block;
+                                }
+                                
+                                .breaking-news:hover {
+                                    cursor: pointer;
+                                    color: red;
+                                }
+                                
+                                .bntime {
+                                    display: inline-block;
+                                    color: gray;
+                                    padding: 0 10px;
+                                    font-size: 12px;
+                                }
+                                
+                                .btnl {
+                                    box-shadow: 1px 1px 0 rgb(255, 255, 255) inset;
+                                    border-radius: 3px;
+                                    border: 1px solid;
+                                    display: inline-block;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    padding: 0 8px;
+                                    position: relative;
+                                    font-size: 12px;
+                                    font-family: cursive;
+                                    font-weight: bold;
+                                    margin-left: -45%;
+                                    margin-top: -17%;
+                                    text-decoration: none;
+                                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+                                }
+                                
+                                .btnl {
+                                    background-color: #ffffff;
+                                    border-color: rgb(0, 0, 0);
+                                    color: rgb(0, 0, 0);
+                                }
+                                
+                                .btnl:hover,
+                                .btnl.active {
+                                    text-shadow: 0 1px 0 #b12f27;
+                                    background-color: #f64136;
+                                    border-color: #b12f27;
+                                }
+                                
+                                .btnl:active {
+                                    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+                                }
+                                
+                                .btnl span {
+                                    color: #f64136;
+                                }
+                                
+                                .btnl:hover,
+                                .btnl:hover span,
+                                .btnl.active,
+                                .btnl.active span {
+                                    color: #eeeeee;
+                                }
+                                
+                                .btnl:active span {
+                                    color: #ffffff;
+                                    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+                                }
+                                
+                                .btnl-counter {
+                                    margin-right: 39px;
+                                }
+                                
+                                .btnl-counter:after,
+                                .btnl-counter:hover:after {
+                                    text-shadow: none;
+                                }
+                                
+                                .btnl-counter:after {
+                                    border-radius: 3px;
+                                    border: 1px solid #d3d3d3;
+                                    background-color: #eee;
+                                    padding: 0 8px;
+                                    color: #777;
+                                    content: attr(data-count);
+                                    left: 100%;
+                                    margin-left: 8px;
+                                    margin-right: -13px;
+                                    position: absolute;
+                                    top: -1px;
+                                }
+                                
+                                .btnl-counter:before {
+                                    transform: rotate(45deg);
+                                    background-color: #eee;
+                                    border: 1px solid #d3d3d3;
+                                    border-right: 0;
+                                    border-top: 0;
+                                    content: '';
+                                    position: absolute;
+                                    right: -13px;
+                                    top: 5px;
+                                    height: 6px;
+                                    width: 6px;
+                                    z-index: 1;
+                                    zoom: 1;
+                                }
+                                
+                                .newsimg1 {
+                                    background-color: white;
+                                    width: 100%;
+                                    font-size: larger;
+                                    text-align: center;
+                                    color: black;
+                                }
+                                
+                                h9 {
+                                    font-size: 1cm;
+                                    font-weight: bold;
+                                }
+                                /*hcat*/
+                                
+                                h3 {
+                                    text-align: center;
+                                    font-size: 0.8cm;
+                                    padding: 5px;
+                                    color: white;
+                                    background-color: black;
+                                    margin-top: 10PX;
+                                }
+                                
+                                .gridlistH {
+                                    position: relative;
+                                    margin: 5px;
+                                    display: flex;
+                                    border: 2px solid rgb(0, 0, 0);
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .gridlist {
+                                    position: relative;
+                                    margin: 5px;
+                                    height: 100%;
+                                    display: flex;
+                                    border: 2px solid rgb(0, 0, 0);
+                                    flex-wrap: wrap;
+                                }
+                                
+                                .griditem1 {
+                                    margin: 10px;
+                                    padding: 50px auto;
+                                    width: 308px;
+                                    height: 100%;
+                                    text-align: center;
+                                    color: white(0, 0, 0);
+                                    font-size: 20px;
+                                    color: black;
+                                    font-family: 'Times New Roman', Times, serif;
+                                }
+                                
+                                .griditem2 {
+                                    margin: 10px;
+                                    padding: 50px auto;
+                                    width: 308px;
+                                    height: 100%;
+                                    text-align: center;
+                                    color: black;
+                                    font-size: 20px;
+                                    font-family: 'Times New Roman', Times, serif;
+                                }
+                                
+                                .griditem3 {
+                                    margin: 10px;
+                                    padding: 50px auto;
+                                    width: 308px;
+                                    height: 100%;
+                                    text-align: center;
+                                    color: black;
+                                    font-size: 20px;
+                                    font-family: 'Times New Roman', Times, serif;
+                                }
+                                
+                                .griditem4 {
+                                    margin: 10px;
+                                    padding: 50px auto;
+                                    width: 308px;
+                                    height: 100%;
+                                    text-align: center;
+                                    color: black;
+                                    font-size: 20px;
+                                    font-family: 'Times New Roman', Times, serif;
+                                }
+                                
+                                .nimg {
+                                    width: 100%;
+                                    height: 260px;
+                                    display: flex;
+                                    position: relative;
+                                    border: solid 2PX black;
+                                }
+                                
+                                .buttonE {
+                                    padding: 10px 25px;
+                                    text-align: center;
+                                    font-family: cursive;
+                                    display: inline-block;
+                                    font-size: 22px;
+                                    margin: 10px 5px;
+                                    cursor: pointer;
+                                    font-weight: bold;
+                                    border-radius: 10px;
+                                }
+                                
+                                .button1 {
+                                    background-color: rgb(0, 255, 240);
+                                    color: black;
+                                    border: 2px solid black;
+                                }
+                                
+                                .button1:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+                                
+                                .button2 {
+                                    background-color: rgb(0, 255, 240);
+                                    color: black;
+                                    border: 2px solid black;
+                                }
+                                
+                                .button2:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+                                
+                                .button3 {
+                                    background-color: rgb(0, 255, 240);
+                                    color: black;
+                                    border: 2px solid black;
+                                }
+                                
+                                .button3:hover {
+                                    background-color: white;
+                                    color: black;
+                                }
+                                
+                                .buttonBACK {
+                                    padding: 10px 25px;
+                                    text-align: center;
+                                    font-family: cursive;
+                                    display: inline-block;
+                                    font-size: 22px;
+                                    cursor: pointer;
+                                    margin: 10px;
+                                    margin-left: -125px;
+                                    margin-right: 135px;
+                                    font-weight: bold;
+                                    border-radius: 10px;
+                                }
+                                
+                                .buttonBACK {
+                                    background-color: white;
+                                    color: red;
+                                    border: 2px solid red;
+                                }
+                                
+                                .buttonBACK:hover {
+                                    background-color: rgb(0, 255, 229);
+                                    color: red;
+                                    border: 2px solid red;
+                                }
+                                
+                                .buttonB {
+                                    position: relative;
+                                    left: 90%;
+                                }
+                                
+                                .buttonhome {
+                                    padding: 10px 25px;
+                                    text-align: center;
+                                    font-family: cursive;
+                                    display: inline-block;
+                                    font-size: 22px;
+                                    cursor: pointer;
+                                    margin: 10px;
+                                    margin-left: -180px;
+                                    margin-right: 135px;
+                                    font-weight: bold;
+                                    border-radius: 10px;
+                                }
+                                
+                                .buttonhome {
+                                    background-color: white;
+                                    color: blue;
+                                    border: 2px solid blue;
+                                }
+                                
+                                .buttonhome:hover {
+                                    background-color: rgb(0, 255, 208);
+                                    color: black;
+                                    border: 2px solid black;
+                                }
+                                
+                                .buttonH {
+                                    position: relative;
+                                    left: 90%;
+                                }
+                                
+                                .button {
+                                    position: relative;
+                                    font-size: 8px;
+                                    display: inline-block;
+                                    background-color: white;
+                                    text-align: center;
+                                    width: 80px;
+                                    transition: all 0.5s;
+                                    color: black;
+                                    cursor: pointer;
+                                    border: none;
+                                    margin: 30px;
+                                    margin-left: 220px;
+                                }
+                                
+                                .button {
+                                    background-color: white;
+                                    color: black;
+                                    border: 2px solid black;
+                                }
+                                
+                                .button:hover {
+                                    background-color: black;
+                                    color: white;
+                                }
+                                /*pagination*/
+                                
+                                .pagination {
+                                    margin: 20px;
+                                    padding: 15px;
+                                    background-color: rgb(213, 32, 32);
+                                    width: 108%;
+                                    display: flex;
+                                    margin-left: -10%;
+                                    background-size: cover;
+                                }
+                                
+                                .pagination ul {
+                                    font-weight: bold;
+                                    position: absolute;
+                                    transform: translate(-50%, -50%);
+                                    display: flex;
+                                    background: #ffffff;
+                                    right: 25%;
+                                    border-radius: 25px;
+                                    box-shadow: 0 15px 20px rgba(255, 255, 255, 0), 0 0 0 4px RED;
+                                }
+                                
+                                .pagination ul li {
+                                    list-style: none;
+                                }
+                                
+                                .pagination ul li a {
+                                    display: block;
+                                    width: 40px;
+                                    height: 40px;
+                                    text-align: center;
+                                    line-height: 40px;
+                                    background: #fff;
+                                    color: #262626;
+                                    text-decoration: none;
+                                    border-radius: 40px;
+                                    margin: 5px;
+                                    box-shadow: inset 0 5px 10px rgba(0, 0, 0, .1), 0 2px 5px rgb(0, 0, 0, .5);
+                                }
+                                
+                                .pagination ul li a:hover {
+                                    background-color: rgb(233, 24, 24);
+                                    color: white;
+                                    font-weight: bold;
+                                }
+                                /*feedback*/
+                                
+                                section {
+                                    background: linear-gradient(to bottom left, rgb(186, 32, 32) 50%, cyan 50%);
+                                    background-size: cover;
+                                    height: 110%;
+                                }
+                                
+                                h6 {
+                                    text-align: center;
+                                    font-size: 1.5cm;
+                                    font-family: fantasy;
+                                    font-weight: 60%;
+                                    flex-wrap: wrap;
+                                    background: linear-gradient( rgb(0, 255, 72), yellow, blue);
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    -moz-background-clip: text;
+                                    -moz-text-fill-color: transparent;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                                
+                                .FeedBack-form {
+                                    position: relative;
+                                    width: 250px;
+                                    border: solid 3px white;
+                                    border-radius: 20px;
+                                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
+                                    background: rgb(61, 5, 140);
+                                    padding: 25px;
+                                    text-align: center;
+                                    left: 55%;
+                                    bottom: 70%;
+                                }
+                                
+                                .input-box {
+                                    border-radius: 20px;
+                                    padding: 10px;
+                                    margin: 10px auto 0;
+                                    width: 100%;
+                                    border: 2px soliD rgb(0, 238, 255);
+                                    outline: none;
+                                }
+                                
+                                .input-box:focus-visible {
+                                    border: solid 3px red;
+                                }
+                                
+                                .feed {
+                                    box-sizing: content-box;
+                                    border-radius: 20px;
+                                    padding: 10px;
+                                    margin: -2px auto 0;
+                                    width: 100%;
+                                    outline: none;
+                                }
+                                
+                                .feed h5 {
+                                    font-size: 20px;
+                                }
+                                
+                                .buttonfeed {
+                                    background-color: #1c8adb;
+                                    margin: 15px 0;
+                                    text-align: center;
+                                    font-size: 15PX;
+                                    padding: 10px;
+                                    border-radius: 20px;
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                    width: 60%;
+                                    color: white;
+                                    border: solid 2px white;
+                                }
+                                
+                                .buttonfeed:hover {
+                                    background-color: #e8f312;
+                                    margin: 15px 0;
+                                    color: black;
+                                    text-align: center;
+                                    font-size: 15PX;
+                                    font-weight: bold;
+                                    border: solid 2px white;
+                                }
+                                
+                                .msgbox {
+                                    box-sizing: content-box;
+                                    border-radius: 20px;
+                                    padding: 35px;
+                                    margin: -2px auto 0;
+                                    width: 70%;
+                                    outline: none;
+                                    border-radius: 1rem;
+                                    margin-left: -22px;
+                                    border: 2px soliD rgb(0, 238, 255);
+                                }
+                                
+                                .msgbox:focus-visible {
+                                    border: solid 3px red;
+                                }
+                                
+                                .icon3 {
+                                    position: relative;
+                                    width: 60px;
+                                    height: 60px;
+                                    background: white;
+                                    border-radius: 50%;
+                                    border: solid 2px white;
+                                    margin: 40px;
+                                    margin-left: 10%;
+                                }
+                                
+                                li {
+                                    list-style-type: none;
+                                }
+                                
+                                .labelI {
+                                    position: relative;
+                                    color: white;
+                                    background: repeating-linear-gradient(rgb(213, 32, 32), BLACK);
+                                    padding: 8PX;
+                                    margin-bottom: auto;
+                                    border-radius: 10PX;
+                                    font-weight: bold;
+                                    border: solid 2px white;
+                                    width: 100%;
+                                    font-family: cursive;
+                                    margin-left: 18%;
+                                    bottom: 13%;
+                                }
+                                
+                                .p1 {
+                                    font-size: 0.4cm;
+                                    font-family: arial;
+                                    font-weight: bold;
+                                    flex-wrap: wrap;
+                                    color: white;
+                                    text-align: center;
+                                }
+                                /*sign up*/
+                                
+                                .sign-up-form {
+                                    border-radius: 20px;
+                                    width: 300px;
+                                    height: auto;
+                                    border: solid 3px white;
+                                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
+                                    padding: 10px;
+                                    margin: 5% auto 0;
+                                    text-align: center;
+                                    color: white;
+                                    background: rgb(61, 5, 140);
+                                }
+                                
+                                .sign-up-form h11 {
+                                    font-size: 22px;
+                                    color: white;
+                                    margin-bottom: 5px;
+                                }
+                                
+                                .signup-btn {
+                                    background-color: #1c8adb;
+                                    margin: -10px 0;
+                                    width: 300px;
+                                    border-radius: 20px;
+                                }
+                                
+                                a {
+                                    text-decoration: solid;
+                                }
+                                
+                                a:hover {
+                                    color: red;
+                                }
+                                
+                                .img7 {
+                                    width: 70px;
+                                    margin-top: -50px;
+                                }
+                                
+                                button {
+                                    color: #fff;
+                                    width: 100%;
+                                    padding: 10px;
+                                    border-radius: 20px;
+                                    font-size: 15px;
+                                    margin: 10px 0;
+                                    border: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                }
+                                /*
+                            log in*/
+                                
+                                .LOG-IN-FORM {
+                                    border-radius: 20px;
+                                    width: 300px;
+                                    border: solid 3px white;
+                                    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 3);
+                                    background: rgb(61, 5, 140);
+                                    padding: 10px;
+                                    margin: 5% auto 0;
+                                    text-align: center;
+                                    color: white;
+                                }
+                                
+                                .LOG-IN-FORM h11 {
+                                    color: white;
+                                    font-size: 22;
+                                    margin-bottom: 5px;
+                                }
+                                
+                                .login-btn {
+                                    background-color: #1c8adb;
+                                }
+                                
+                                b:link,
+                                b:visited {
+                                    background-color: #f44336;
+                                    color: white;
+                                    padding: 14px 25px;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    display: inline-block;
+                                }
